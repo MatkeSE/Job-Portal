@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AccountController;
+use App\Http\Controllers\JobsController;
 
 
 /*
@@ -21,7 +22,10 @@ use App\Http\Controllers\AccountController;
 // });
 
 Route::get('/',[HomeController::class,'index'])->name('home');
-
+Route::get('/jobs',[JobsController::class,'index'])->name('jobs');
+// Route::get('/jobs/detail/{id}',[JobsController::class,'detail'])->name('jobDetail');
+// Route::post('/apply-job',[JobsController::class,'applyJob'])->name('applyJob');
+// Route::post('/save-job',[JobsController::class,'saveJob'])->name('saveJob');
 
 
 
