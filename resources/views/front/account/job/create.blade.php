@@ -159,7 +159,7 @@
 <script type="text/javascript">
 $("#createJobForm").submit(function(e){
     e.preventDefault();
-    
+    $("button[type='submit']").prop('disabled',true);
 
     $.ajax({
         url: '{{ route("account.saveJob") }}',
@@ -167,6 +167,7 @@ $("#createJobForm").submit(function(e){
         dataType: 'json',
         data: $("#createJobForm").serializeArray(),
         success: function(response) {
+            $("button[type='submit']").prop('disabled',false);
 
             if(response.status == true) {
 
