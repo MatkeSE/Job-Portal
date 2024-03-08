@@ -16,3 +16,13 @@ The user can apply for jobs that are available, and can also set the job that wi
 He can perform crud operations on the job he set.
 <br>
 2.Admin - in development
+
+
+# What I Learned 
+-Principles of Web Development <br>
+-Connecting database with PHP <br>
+-CRUD operations <br>
+-Laravel 10 Framework <br>
+-AJAX <br>
+-Authenticating Users, password hashing
+& much more
